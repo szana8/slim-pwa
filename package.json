@@ -1,6 +1,6 @@
 {
   "name": "slim-vue",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A VueJS PWA application for Slim",
   "author": "Istvan Szana",
   "private": true,
@@ -10,16 +10,23 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "localforage": "^1.5.3",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "mdi": "^2.0.46",
+    "vue-bus": "^1.0.0",
+    "vuetify": "^0.16.9"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
+    "axios": "^0.17.0",
     "babel-core": "^6.26.0",
     "sw-precache-webpack-plugin": "^0.11.4",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
     "chalk": "^2.1.0",
@@ -34,6 +41,7 @@
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
     "http-proxy-middleware": "^0.17.4",
+    "lodash": "^4.17.4",
     "webpack-bundle-analyzer": "^2.9.0",
     "semver": "^5.4.1",
     "shelljs": "^0.7.8",
@@ -45,6 +53,7 @@
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.5.2",
+    "vuex": "^2.5.0",
     "webpack": "^3.7.1",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.19.1",
