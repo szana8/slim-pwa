@@ -16,7 +16,6 @@
                                  {{ user.data.name.charAt(0) }}
                             </span>
                     </v-avatar>
-
                 </v-btn>
                 <v-list>
                     <v-list-tile v-for="(item,i) in list" :key="i" @click.prevent="doAction(item.path)">
@@ -44,7 +43,8 @@
 </template>
 
 <script>
-    import {mapGetters, mapActions} from 'vuex'
+    import { mapGetters, mapActions } from 'vuex'
+
     export default {
         data() {
             return {
@@ -66,7 +66,7 @@
         }),
 
         methods: {
-
+            // 
         }
     }
 </script>

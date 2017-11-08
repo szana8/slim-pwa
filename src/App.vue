@@ -1,12 +1,22 @@
 <template>
     <div id="app">
         <v-app>
+            <navigation-drawer v-if="user.authenticated"></navigation-drawer>
             <navigation></navigation>
+            <loader></loader>
+
             <main>
-                <v-container fluid>
-                    <router-view></router-view>
-                </v-container>
+                <v-content>
+                    <v-container fluid grid-list-md>
+                        <v-layout row wrap justify-center align-center>
+                            <router-view></router-view>
+                        </v-layout>
+                    </v-container>
+                </v-content>
             </main>
+
+            <!-- <v-footer></v-footer> -->
+
         </v-app>
     </div>
 </template>
@@ -14,13 +24,23 @@
 <script>
 
     import navigation from './components/Navigation'
+    import NavigationDrawer from './components/NavigationDrawer'
+    import loader from './components/Loader'
+    
+    import { mapGetters } from 'vuex'
 
     export default {
+        
+        name: 'app',
 
         components: {
+            loader,
             navigation,
+            NavigationDrawer,
         },
 
-        name: 'app'
+        computed: mapGetters({
+            user: 'auth/user'
+        }),
     }
 </script>
