@@ -17,3 +17,17 @@ export const teams = (state) => {
 export const team = (state) => {
     return state.team
 }
+
+/**
+ * [description]
+ * @param  {[type]} state [description]
+ * @return {[type]}       [description]
+ */
+export const action = (state) => {
+    if ( state.team.id != null )
+        state.action = 'Update'
+    else
+        state.action = 'Insert'
+
+    return state.action
+}

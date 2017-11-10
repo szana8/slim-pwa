@@ -19,10 +19,10 @@ export const fetchTeams = ({ commit } ) => {
     })
 }
 
-export const getTeam = ({ commit }, { team }) => {
+export const getTeam = ( { commit }, teamId ) => {
     return new Promise((resolve, reject) => {
-        axios.get('/api/v1/team/' + team).then((response) => {
-            //commit('addTeamsToList', response.data.data)
+        axios.get('/api/v1/team/' + teamId).then((response) => {
+            commit('addTeamToState', response.data.data)
             resolve()
         });
     }).catch((error) => {
@@ -57,15 +57,13 @@ export const update = ({ dispatch }, { payload, context }) => {
 
 }
 
-export const destroy = ({ dispatch }, { payload, context }) => {
-
+export const destroy = ({ dispatch }, teamId) => {
     return new Promise((resolve, reject) => {
-        axios.delete('/api/v1/team/' + payload.id).then((response) => {
+        axios.delete('/api/v1/team/' + teamId).then((response) => {
             resolve(response)
         }).catch((error) => {
             context.errors = error.response.data.errors
             reject(error)
         })
     })
-
 }

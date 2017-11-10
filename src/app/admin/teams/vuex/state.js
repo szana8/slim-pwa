@@ -6,5 +6,5 @@ export default {
         display_name: null,
         description: null,
     },
-    mode: 'insert',
+    action: null,
 }

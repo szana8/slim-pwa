@@ -24,7 +24,6 @@
             return {
                 fab: false,
                 tabs: null,
-                search: null,
                 hidden: false,
             }
         },

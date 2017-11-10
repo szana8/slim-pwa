@@ -7,6 +7,7 @@ Vue.use(Vuex)
  */
 import auth from '../app/auth/vuex'
 import roles from '../app/admin/roles/vuex'
+import teams from '../app/admin/teams/vuex'
 
 /**
  * Set the vuex components to the base vuex store
@@ -16,6 +17,7 @@ import roles from '../app/admin/roles/vuex'
 export default new Vuex.Store({
     modules: {
         auth: auth,
-        roles: roles
+        roles: roles,
+        teams: teams,
     }
 })

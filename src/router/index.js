@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import beforeEach from './beforeEach'
 
 Vue.use(Router)
 
@@ -16,5 +17,7 @@ const router = new Router({
     mode: 'history',
     routes: routes
 })
+
+router.beforeEach(beforeEach)
 
 export default router

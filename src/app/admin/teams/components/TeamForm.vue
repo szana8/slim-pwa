@@ -9,7 +9,7 @@
                     <v-layout wrap>
                         <v-flex xs12>
 
-                            <v-text-field label="Name" required v-model="name" v-bind:class="{ 'input-group--error':  errors.name }"></v-text-field>
+                            <v-text-field label="Name" required v-model="team.name" v-bind:class="{ 'input-group--error':  errors.name }"></v-text-field>
                             <div class="input-group__details" style="margin-top:-30px;color:red;" v-if="errors.name">
                                 <div class="input-group__messages">
                                     <div class="input-group__error" v-text="errors.name[0]"></div>
@@ -18,7 +18,7 @@
 
                         </v-flex>
                         <v-flex xs12>
-                            <v-text-field label="Display Name" required v-model="display_name" v-bind:class="{ 'input-group--error':  errors.display_name }"></v-text-field>
+                            <v-text-field label="Display Name" required v-model="team.display_name" v-bind:class="{ 'input-group--error':  errors.display_name }"></v-text-field>
                             <div class="input-group__details" style="margin-top:-30px;color:red;" v-if="errors.display_name">
                                 <div class="input-group__messages">
                                     <div class="input-group__error" v-text="errors.display_name[0]"></div>
@@ -26,14 +26,14 @@
                             </div>
                         </v-flex>
                         <v-flex xs12>
-                            <v-text-field multi-line label="Description" required v-model="description"></v-text-field>
+                            <v-text-field multi-line label="Description" required v-model="team.description"></v-text-field>
                         </v-flex>
                     </v-layout>
                 </v-container>
             </v-card-text>
             <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="blue darken-1" flat @click.native="dialog = false">Close</v-btn>
+                <v-btn color="blue darken-1" flat @click.native="closeTeamDialog">Close</v-btn>
                 <v-btn color="blue darken-1" flat @click.native="submit">Save</v-btn>
             </v-card-actions>
         </v-card>
@@ -41,23 +41,23 @@
 </template>
 
 <script>
-    import { mapActions } from 'vuex'
+    import { mapActions, mapGetters } from 'vuex'
 
     export default {
         name: 'TeamForm',
 
         data() {
             return {
-                id: null,
-                name: null,
                 dialog: false,
                 mode: "insert",
-                action: 'Create',
-                description: null,
-                display_name: null,
-                errors: []
+                errors: [],
             }
         },
+
+        computed: mapGetters({
+            team: 'teams/team',
+            action: 'teams/action',
+        }),
 
         mounted() {
             EventBus.$on('openTeamForm', this.openForm);
@@ -65,30 +65,29 @@
 
         methods: {
             ...mapActions({
-                store: 'team/store',
-                update: 'team/update'
+                store: 'teams/store',
+                update: 'teams/update',
+                getTeam: 'teams/getTeam',
             }),
 
-            openForm: function (team) {
-                // if (team != null)
-                // {
-                //     this.action = "Update"
-                //     this.mode = "update"
+            openForm: function ( teamId ) {
+                if ( teamId != null ) {
+                    this.getTeam(teamId).then(() => {
+                        this.dialog = true;
+                        return
+                    })
+                }
 
-                //     this.name = team.name
-                //     this.display_name = team.display_name
-                //     this.description = team.description
-                //     this.id = team.id
+                this.dialog = true
+                return
+            },
 
-                //     this.dialog = true;
-                // }
-                // else
-                // {
-                //     this.action = "Create"
-                //     this.mode = "insert"
-                //     this.dialog = true;
-                // }
-
+            closeTeamDialog: function () {
+                this.dialog = false
+                this.team.id = null
+                this.team.name = null
+                this.team.display_name = null
+                this.team.description = null
             },
 
             submit: function () {

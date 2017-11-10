@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Team",
+				"TeamForm"
+			],
+			[
 				"Permiss",
 				"PermissionForm"
 			],
@@ -39,6 +43,25 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/router/beforeEach.js",
+			"settings":
+			{
+				"buffer_size": 499,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "import store from '../vuex'"
+			}
+		},
+		{
+			"file": "src/router/index.js",
+			"settings":
+			{
+				"buffer_size": 421,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -131,29 +154,40 @@
 		"/C/laragon/www/slim-vue",
 		"/C/laragon/www/slim-vue/src",
 		"/C/laragon/www/slim-vue/src/app",
-		"/C/laragon/www/slim-vue/src/app/admin",
-		"/C/laragon/www/slim-vue/src/app/admin/permissions",
-		"/C/laragon/www/slim-vue/src/app/admin/teams",
-		"/C/laragon/www/slim-vue/src/app/admin/teams/routes",
-		"/C/laragon/www/slim-vue/src/components"
+		"/C/laragon/www/slim-vue/src/router"
 	],
 	"file_history":
 	[
-		"/C/laragon/www/slim-vue/src/helpers/index.js",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/getters.js",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/actions.js",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/components/TeamForm.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/mutations.js",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/routes/index.js",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/components/Teams.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/index.js",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/state.js",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Roles.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/components/TeamList.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/components/RoleList.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/components/RoleAssignment.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/routes/index.js",
+		"/C/laragon/www/slim-vue/src/components/NavigationDrawer.vue",
+		"/C/laragon/www/slim-vue/src/router/index.js",
+		"/C/laragon/www/slim-vue/src/app/errors/routes/index.js",
+		"/C/laragon/www/slim-vue/package.json",
+		"/C/laragon/www/slim-vue/.eslint.json",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Assignment.vue",
+		"/C/laragon/www/slim-vue/src/helpers/index.js",
 		"/C/laragon/www/slim-api/composer.json",
 		"/C/laragon/www/slim-api/bootstrap/app.php",
-		"/C/laragon/www/slim-vue/src/router/index.js",
 		"/C/laragon/www/slim-vue/src/App.vue",
 		"/C/laragon/www/slim-vue/src/vuex/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Form.vue",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_prospect_hold_v.sql",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/mutations.js",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Roles.vue",
 		"/C/laragon/www/slim-vue/src/app/auth/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/auth/vuex/mutations.js",
 		"/C/laragon/www/slim-vue/src/app/auth/vuex/getters.js",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Assignment.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/getters.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/state.js",
@@ -170,7 +204,6 @@
 		"/C/laragon/www/slim-api/resources/assets/js/components/App.vue",
 		"/C/laragon/www/slim-vue/src/main.js",
 		"/C/laragon/www/slim-api/resources/views/welcome.blade.php",
-		"/C/laragon/www/slim-vue/src/components/NavigationDrawer.vue",
 		"/C/laragon/www/slim-api/resources/assets/js/components/Loader.vue",
 		"/C/laragon/www/slim-vue/src/components/Loader.vue",
 		"/C/laragon/www/slim-vue/src/app/routes.js",
@@ -252,21 +285,7 @@
 		"/C/Users/huszanai/AppData/Local/Temp/Temp1_code-laravel-datatables-laravel-datatables.zip/app/Http/Controllers/DataTable/PlanController.php",
 		"/C/Users/huszanai/AppData/Local/Temp/Temp1_code-laravel-datatables-laravel-datatables.zip/app/Http/Controllers/DataTable/UserController.php",
 		"/C/Users/huszanai/AppData/Local/Temp/Temp1_code-laravel-datatables-laravel-datatables.zip/app/Http/Controllers/HomeController.php",
-		"/C/Users/huszanai/AppData/Local/Temp/Temp1_code-laravel-datatables-laravel-datatables.zip/app/Http/Controllers/Controller.php",
-		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/deploy/2017/q3_ooc/2017_Q3_OOC_VAR_ORDER_REPORT_FIX.sh",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/Views/OSS order calibration line  (not linked to SO) that is attached (via Cal DFF - ATTR1 ) to an OE line that has a closed SO.sql",
-		"/C/Users/huszanai/Downloads/ni_si_var_order_notes_5 (5).sql",
-		"/C/Users/huszanai/Downloads/ni_si_var_order_notes_5 (4).sql",
-		"/C/laragon/www/slim-api/resources/assets/js/components/DataTable.vue",
-		"/C/Users/huszanai/AppData/Local/Temp/Temp1_slim-api-4d5ac57d84b62d08ff318c2ddbb953f75f8bd680.zip/slim-api-4d5ac57d84b62d08ff318c2ddbb953f75f8bd680/resources/assets/js/components/Navigation.vue",
-		"/C/laragon/www/slim-api/app/Http/Controllers/Admin/RoleController.php",
-		"/C/laragon/www/slim-api/app/Http/Controllers/Admin/ProfileController.php",
-		"/C/laragon/www/slim-api/app/Http/Controllers/DataTable/DataTableController.php",
-		"/C/laragon/www/slim-api/app/Providers/AppServiceProvider.php",
-		"/C/laragon/www/slim-api/config/app.php",
-		"/C/laragon/www/slim-api/.env",
-		"/C/laragon/www/slim-api/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php",
-		"/C/laragon/www/slim-api/resources/assets/js/app/auth/components/Login.vue"
+		"/C/Users/huszanai/AppData/Local/Temp/Temp1_code-laravel-datatables-laravel-datatables.zip/app/Http/Controllers/Controller.php"
 	],
 	"find":
 	{
@@ -284,6 +303,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"RoleAssignment",
 			"totalItems",
 			"RoleTable",
 			"Navigation",
@@ -372,8 +392,68 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/router/beforeEach.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								447,
+								447
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import store from '../vuex'",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/router/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
