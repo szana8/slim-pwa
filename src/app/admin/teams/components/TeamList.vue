@@ -24,7 +24,7 @@
                     <v-btn flat icon color="primary" @click="editTeam(props.item.id)">
                         <v-icon>edit</v-icon>
                     </v-btn>
-                    <v-btn flat icon color="error" v-on:click="destroyTeam(props.item.id)">
+                    <v-btn flat icon color="error" v-on:click="destroy(props.item.id)">
                         <v-icon>delete</v-icon>
                     </v-btn>
                 </td>
@@ -87,6 +87,15 @@
 
             editTeam: function (teamId) {
                 EventBus.$emit('openTeamForm', teamId);
+            },
+
+            destroy: function (teamId) {
+                this.loading = true
+                this.destroyTeam(teamId).then(() => {
+                    EventBus.$emit('refreshTeamTable');
+                }).catch((error) => {
+                    console.log(error)
+                })
             }
         }
     }

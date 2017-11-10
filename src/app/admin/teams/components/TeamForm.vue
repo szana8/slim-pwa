@@ -8,14 +8,12 @@
                 <v-container grid-list-md>
                     <v-layout wrap>
                         <v-flex xs12>
-
                             <v-text-field label="Name" required v-model="team.name" v-bind:class="{ 'input-group--error':  errors.name }"></v-text-field>
                             <div class="input-group__details" style="margin-top:-30px;color:red;" v-if="errors.name">
                                 <div class="input-group__messages">
                                     <div class="input-group__error" v-text="errors.name[0]"></div>
                                 </div>
                             </div>
-
                         </v-flex>
                         <v-flex xs12>
                             <v-text-field label="Display Name" required v-model="team.display_name" v-bind:class="{ 'input-group--error':  errors.display_name }"></v-text-field>
@@ -65,8 +63,7 @@
 
         methods: {
             ...mapActions({
-                store: 'teams/store',
-                update: 'teams/update',
+                submitTeam: 'teams/submit',
                 getTeam: 'teams/getTeam',
             }),
 
@@ -77,9 +74,10 @@
                         return
                     })
                 }
-
-                this.dialog = true
-                return
+                else {
+                    this.dialog = true
+                    return
+                }
             },
 
             closeTeamDialog: function () {
@@ -91,55 +89,20 @@
             },
 
             submit: function () {
-                // EventBus.$emit('loading', true)
-
-                // if (this.mode == "update")
-                // {
-                //     this.update({
-                //         payload: {
-                //             name: this.name,
-                //             display_name: this.display_name,
-                //             description: this.description,
-                //             id: this.id
-                //         },
-                //         context: this
-                //     }).then((response) => {
-                //         EventBus.$emit('loading', false)
-                //         this.name = null
-                //         this.display_name = null
-                //         this.description = null
-                //         this.dialog = false
-
-                //         EventBus.$emit('refreshTeamTable');
-                //     }).catch((error) => {
-                //         EventBus.$emit('loading', false)
-                //     })
-                // }
-                // else if (this.mode == "insert")
-                // {
-                //     this.store({
-                //         payload: {
-                //             name: this.name,
-                //             display_name: this.display_name,
-                //             description: this.description
-                //         },
-                //         context: this
-                //     }).then((response) => {
-                //         EventBus.$emit('loading', false)
-                //         this.name = null
-                //         this.display_name = null
-                //         this.description = null
-                //         this.dialog = false
-                //         EventBus.$emit('refreshTeamTable');
-                //     }).catch((error) => {
-                //         EventBus.$emit('loading', false)
-                //     })
-                // }
+                this.submitTeam({
+                    payload: {
+                        id: this.team.id,
+                        name: this.team.name,
+                        display_name: this.team.display_name,
+                        description: this.team.description,
+                    }
+                }).then(() => {
+                    this.closeTeamDialog()
+                    EventBus.$emit('refreshTeamTable');
+                }).catch(() => {
+                    console.log('Error when submit the ' + this.team.name + ' team.')
+                })
             },
-
         },
-
-
     }
-
 </script>
