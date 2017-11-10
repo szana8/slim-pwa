@@ -3,6 +3,10 @@
         <v-flex d-flex xs12 sm12 md12 xl12>
             <v-card>
                 <v-card-title primary-title>
+                    <div>
+                        <h3 class="headline mb-0">Role Assignment</h3>
+                        <div>This permissions has been assigned to the {{ roleId }} role.</div>
+                    </div>
                     <v-spacer></v-spacer>
                     <v-text-field append-icon="search"
                                   label="Search"
@@ -42,6 +46,11 @@
 <script>
 
     export default {
+        name: 'RoleAssignment',
+
+        props: {
+            roleId: Number,
+        } ,
 
         data() {
             return {
@@ -55,7 +64,7 @@
                     {text: 'Name', value: 'name', align: 'left'},
                     {text: 'Display Name', value: 'display_name'},
                     {text: 'Description', value: 'description'},
-                ]
+                ],
             }
         },
 
@@ -82,9 +91,9 @@
                     this.pagination.sortBy = column
                     this.pagination.descending = false
                 }
-            }
+            },
 
-        }
+        },
 
     }
 

@@ -1,4 +1,4 @@
-import { NotFound } from '../components'
+const NotFound = () => import('../components/NotFound')
 
 export default [
     {

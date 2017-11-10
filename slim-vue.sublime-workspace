@@ -39,15 +39,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/app/admin/roles/components/Form.vue",
-			"settings":
-			{
-				"buffer_size": 3643,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -139,24 +130,35 @@
 	[
 		"/C/laragon/www/slim-vue",
 		"/C/laragon/www/slim-vue/src",
-		"/C/laragon/www/slim-vue/src/vuex"
+		"/C/laragon/www/slim-vue/src/app",
+		"/C/laragon/www/slim-vue/src/app/admin",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions",
+		"/C/laragon/www/slim-vue/src/app/admin/teams",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/routes",
+		"/C/laragon/www/slim-vue/src/components"
 	],
 	"file_history":
 	[
+		"/C/laragon/www/slim-vue/src/helpers/index.js",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/routes/index.js",
+		"/C/laragon/www/slim-api/composer.json",
+		"/C/laragon/www/slim-api/bootstrap/app.php",
+		"/C/laragon/www/slim-vue/src/router/index.js",
+		"/C/laragon/www/slim-vue/src/App.vue",
+		"/C/laragon/www/slim-vue/src/vuex/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Form.vue",
+		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_prospect_hold_v.sql",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/mutations.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Roles.vue",
 		"/C/laragon/www/slim-vue/src/app/auth/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/auth/vuex/mutations.js",
 		"/C/laragon/www/slim-vue/src/app/auth/vuex/getters.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Assignment.vue",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/routes/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/getters.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/state.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Table.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/index.js",
-		"/C/laragon/www/slim-vue/src/vuex/index.js",
 		"/C/laragon/www/slim-vue/src/components/Navigation.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/Permissions.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/Form.vue",
@@ -167,7 +169,6 @@
 		"/C/laragon/www/slim-api/resources/assets/js/app.js",
 		"/C/laragon/www/slim-api/resources/assets/js/components/App.vue",
 		"/C/laragon/www/slim-vue/src/main.js",
-		"/C/laragon/www/slim-vue/src/App.vue",
 		"/C/laragon/www/slim-api/resources/views/welcome.blade.php",
 		"/C/laragon/www/slim-vue/src/components/NavigationDrawer.vue",
 		"/C/laragon/www/slim-api/resources/assets/js/components/Loader.vue",
@@ -198,7 +199,6 @@
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_invalid_cc_orders_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cln_op_serv_cl_line_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cln_cl_serv_op_line_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_prospect_hold_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_op_oe_cl_line_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_o_oe_cancel_l_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_cl_oe_op_line_v.sql",
@@ -266,15 +266,11 @@
 		"/C/laragon/www/slim-api/config/app.php",
 		"/C/laragon/www/slim-api/.env",
 		"/C/laragon/www/slim-api/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php",
-		"/C/laragon/www/slim-api/resources/assets/js/app/auth/components/Login.vue",
-		"/C/laragon/www/slim-api/resources/assets/js/app/routes.js",
-		"/C/laragon/www/slim-api/resources/assets/js/app/auth/components/Register.vue",
-		"/C/laragon/www/slim-api/resources/assets/js/app/auth/vuex/actions.js",
-		"/C/Users/huszanai/Downloads/actions.js"
+		"/C/laragon/www/slim-api/resources/assets/js/app/auth/components/Login.vue"
 	],
 	"find":
 	{
-		"height": 76.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -376,39 +372,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/app/admin/roles/components/Form.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3643,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2224,
-								2224
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2025.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -493,12 +458,12 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{

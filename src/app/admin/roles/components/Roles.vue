@@ -3,18 +3,8 @@
         <role-form></role-form>
 
         <v-flex d-flex xs12 sm12 md12 xl12>
-            <v-card>
-                <v-card-title primary-title>
-                    <div>
-                        <h3 class="headline mb-0">Global Roles</h3>
-                        <div>Slim enables you to allocate particular people to specific roles in your project. Roles are used when defining other settings, like notifications and permissions.</div>
-                    </div>
-                    <v-spacer></v-spacer>
-                    <v-text-field append-icon="search" label="Search" single-line hide-details v-model="search"></v-text-field>
-                </v-card-title>
-
-                <role-table :search="search"></role-table>
-            </v-card>
+            
+            <router-view></router-view>
 
             <!-- Floating action button -->
                 <v-fab-transition>
@@ -30,24 +20,21 @@
 </template>
 
 <script>
-
-    const RoleForm = () => import('./Form')
-    const RoleTable = () => import('./Table')
+    const RoleForm = () => import('./RoleForm')
 
     export default {
         name: 'RoleModule',
 
         components: {
             RoleForm,
-            RoleTable,
         },
 
         data () {
             return {
-                search: null,
                 fab: false,
+                tabs: null,
+                search: null,
                 hidden: false,
-                tabs: null
             }
         },
 

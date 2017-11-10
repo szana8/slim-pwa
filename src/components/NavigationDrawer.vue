@@ -46,7 +46,7 @@
                                 </v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
-                        <v-list-tile v-for="(child, i) in item.children" :key="i" :to="child.route" exact>
+                        <v-list-tile v-for="(child, i) in item.children" :key="i" :to="child.route">
                             <v-list-tile-action v-if="child.icon">
                                 <v-icon>{{ child.icon }}</v-icon>
                             </v-list-tile-action>
@@ -74,11 +74,9 @@
 </template>
 
 <script>
-
     import { mapGetters } from 'vuex'
 
     export default {
-        
         name: 'NavigatioNDrawer',
 
         data () {
@@ -138,9 +136,8 @@
         }),
 
         methods: {
-
             doAction: function (route_name) {
-                this.$router.replace({ name:  route_name})
+                this.$router.push({ name:  route_name })
             }
 
         }

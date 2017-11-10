@@ -22,15 +22,12 @@
 </template>
 
 <script>
-
+    import { mapGetters } from 'vuex'
+    import loader from './components/Loader'
     import navigation from './components/Navigation'
     import NavigationDrawer from './components/NavigationDrawer'
-    import loader from './components/Loader'
     
-    import { mapGetters } from 'vuex'
-
     export default {
-        
         name: 'app',
 
         components: {

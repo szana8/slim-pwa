@@ -9,7 +9,7 @@
                     <v-layout wrap>
                         <v-flex xs12>
 
-                            <v-text-field label="Name" required v-model="name" v-bind:class="{ 'input-group--error':  errors.name }"></v-text-field>
+                            <v-text-field label="Name" required v-model="name" v-bind:class="{ 'input-group--error':  errors.name }" />
                             <div class="input-group__details" style="margin-top:-30px;color:red;" v-if="errors.name">
                                 <div class="input-group__messages">
                                     <div class="input-group__error" v-text="errors.name[0]"/>
@@ -18,7 +18,7 @@
 
                         </v-flex>
                         <v-flex xs12>
-                            <v-text-field label="Display Name" required v-model="display_name" v-bind:class="{ 'input-group--error':  errors.display_name }"></v-text-field>
+                            <v-text-field label="Display Name" required v-model="display_name" v-bind:class="{ 'input-group--error':  errors.display_name }" />
                             <div class="input-group__details" style="margin-top:-30px;color:red;" v-if="errors.display_name">
                                 <div class="input-group__messages">
                                     <div class="input-group__error" v-text="errors.display_name[0]"/>
@@ -26,7 +26,7 @@
                             </div>
                         </v-flex>
                         <v-flex xs12>
-                            <v-text-field multi-line label="Description" required v-model="description"></v-text-field>
+                            <v-text-field multi-line label="Description" required v-model="description" />
                         </v-flex>
                     </v-layout>
                 </v-container>
@@ -48,11 +48,11 @@
 
         data() {
             return {
+                name: null,
                 dialog: false,
                 action: 'Create',
-                name: null,
-                display_name: null,
                 description: null,
+                display_name: null,
                 errors: [],
             }
         },

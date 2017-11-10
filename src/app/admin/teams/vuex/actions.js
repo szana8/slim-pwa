@@ -1,5 +1,35 @@
 import { isEmpty } from 'lodash'
 
+/**
+ * Fetch all of the teams from the Slim API and add to the
+ * teams state. Return with a new Promise.
+ * 
+ * @param  {[type]} options.commit [description]
+ * @return {[type]}                [description]
+ */
+export const fetchTeams = ({ commit } ) => {
+    return new Promise((resolve, reject) => {
+        axios.get('/api/v1/team').then((response) => {
+            commit('addTeamsToList', response.data.data)
+            resolve()
+        });
+    }).catch((error) => {
+        context.errors = error.response.data.errors
+        reject(error)
+    })
+}
+
+export const getTeam = ({ commit }, { team }) => {
+    return new Promise((resolve, reject) => {
+        axios.get('/api/v1/team/' + team).then((response) => {
+            //commit('addTeamsToList', response.data.data)
+            resolve()
+        });
+    }).catch((error) => {
+        context.errors = error.response.data.errors
+        reject(error)
+    })
+}
 
 export const store = ({ dispatch }, { payload, context }) => {
 
