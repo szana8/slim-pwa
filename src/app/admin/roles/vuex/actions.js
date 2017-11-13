@@ -9,7 +9,7 @@ import { isEmpty } from 'lodash'
  */
 export const fetchRoles = ({ commit } ) => {
     return new Promise((resolve, reject) => {
-        axios.get('/api/v1/role').then((response) => {
+        axios.get('roles').then((response) => {
             commit('addRolesToList', response.data.data)
             resolve()
         });
@@ -30,7 +30,7 @@ export const fetchRoles = ({ commit } ) => {
  */
 export const store = ({ dispatch }, { payload, context }) => {
     return new Promise((resolve, reject) => {
-        axios.post('/api/v1/role', payload).then((response) => {
+        axios.post('roles', payload).then((response) => {
             resolve(response)
         }).catch((error) => {
             context.errors = error.response.data.errors
@@ -50,7 +50,7 @@ export const store = ({ dispatch }, { payload, context }) => {
  */
 export const destroy = ({ dispatch }, { payload, context }) => {
     return new Promise((resolve, reject) => {
-        axios.delete('/api/v1/role/' + payload.id).then((response) => {
+        axios.delete('roles/' + payload.id).then((response) => {
             resolve(response)
         }).catch((error) => {
             context.errors = error.response.data.errors

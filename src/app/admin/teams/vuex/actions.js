@@ -7,7 +7,7 @@
  */
 export const fetchTeams = ({ commit } ) => {
     return new Promise((resolve, reject) => {
-        axios.get('/api/v1/team').then((response) => {
+        axios.get('teams').then((response) => {
             commit('addTeamsToList', response.data.data)
             resolve()
         }).catch((error) => {
@@ -26,7 +26,7 @@ export const fetchTeams = ({ commit } ) => {
  */
 export const getTeam = ( { commit }, teamId ) => {
     return new Promise((resolve, reject) => {
-        axios.get('/api/v1/team/' + teamId).then((response) => {
+        axios.get('teams/' + teamId).then((response) => {
             commit('addTeamToState', response.data.data)
             resolve()
         });
@@ -70,7 +70,7 @@ export const submit = ({ dispatch }, { payload, context }) => {
  */
 export const store = ({ dispatch }, { payload, context }) => {
     return new Promise((resolve, reject) => {
-        axios.post('/api/v1/team', payload ).then((response) => {
+        axios.post('teams', payload ).then((response) => {
             resolve(response)
         }).catch((error) => {
             context.errors = error.response.data.errors
@@ -88,7 +88,7 @@ export const store = ({ dispatch }, { payload, context }) => {
  */
 export const update = ( { dispatch }, { payload, context } ) => {
     return new Promise((resolve, reject) => {
-        axios.put('/api/v1/team/' + payload.id, payload).then((response) => {
+        axios.put('teams/' + payload.id, payload).then((response) => {
             resolve(response)
         }).catch((error) => {
             context.errors = error.response.data.errors
@@ -106,7 +106,7 @@ export const update = ( { dispatch }, { payload, context } ) => {
  */
 export const destroy = ({ dispatch }, teamId) => {
     return new Promise((resolve, reject) => {
-        axios.delete('/api/v1/team/' + teamId).then((response) => {
+        axios.delete('teams/' + teamId).then((response) => {
             resolve(response)
         }).catch((error) => {
             context.errors = error.response.data.errors

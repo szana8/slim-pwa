@@ -13,7 +13,7 @@ import { setHttpToken } from "../../../helpers/index";
  */
 export const register = ({ dispatch }, { payload, context }) => {
     return new Promise((resolve, reject) => {
-        axios.post('api/v1/auth/signup', payload).then((response) => {
+        axios.post('auth/signup', payload).then((response) => {
             dispatch('setToken', response.data.meta.token).then(() => {
                 dispatch('fetchUser')
             })
@@ -35,7 +35,7 @@ export const register = ({ dispatch }, { payload, context }) => {
  * @return {[type]}                  [description]
  */
 export const login = ({ dispatch }, { payload, context }) => {
-    return axios.post('api/v1/auth/signin', payload).then((response) => {
+    return axios.post('auth/signin', payload).then((response) => {
        dispatch('setToken', response.data.meta.token).then(() => {
            dispatch('fetchUser')
        })
@@ -104,7 +104,7 @@ export const clearAuth = ({ commit }, token) => {
  * @return {[type]}                [description]
  */
 export const fetchUser = ({ commit }) => {
-    return axios.get('/api/v1/auth/signedIn').then((response) => {
+    return axios.get('auth/signedIn').then((response) => {
         commit('setAuthenticated', true)
         commit('setUserData', response.data.data)
     })
@@ -118,7 +118,7 @@ export const fetchUser = ({ commit }) => {
  * @return {[type]}                  [description]
  */
 export const logout = ({ dispatch }) => {
-    return axios.post('/api/v1/auth/logout').then((response) => {
+    return axios.post('auth/logout').then((response) => {
         dispatch('clearAuth')
     })
 }

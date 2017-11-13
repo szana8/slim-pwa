@@ -7,7 +7,7 @@
  */
 export const fetchPermissions = ({ commit } ) => {
     return new Promise((resolve, reject) => {
-        axios.get('/api/v1/permission').then((response) => {
+        axios.get('permissions').then((response) => {
             commit('addPermissionsToList', response.data.data)
             resolve()
         }).catch((error) => {
@@ -26,7 +26,7 @@ export const fetchPermissions = ({ commit } ) => {
  */
 export const getPermission = ( { commit }, permissionId ) => {
     return new Promise((resolve, reject) => {
-        axios.get('/api/v1/permission/' + permissionId).then((response) => {
+        axios.get('permissions/' + permissionId).then((response) => {
             commit('addPermissionToState', response.data.data)
             resolve()
         });
@@ -70,7 +70,7 @@ export const submit = ({ dispatch }, { payload, context }) => {
  */
 export const store = ({ dispatch }, { payload, context }) => {
     return new Promise((resolve, reject) => {
-        axios.post('/api/v1/permission', payload).then((response) => {
+        axios.post('permissions', payload).then((response) => {
             resolve(response)
         }).catch((error) => {
             context.errors = error.response.data.errors
@@ -88,7 +88,7 @@ export const store = ({ dispatch }, { payload, context }) => {
  */
 export const update = ({ dispatch }, { payload, context }) => {
     return new Promise((resolve, reject) => {
-        axios.put('/api/v1/permission/' + payload.id, payload).then((response) => {
+        axios.put('permissions/' + payload.id, payload).then((response) => {
             resolve(response)
         }).catch((error) => {
             //context.errors = error.response.data.errors
@@ -106,7 +106,7 @@ export const update = ({ dispatch }, { payload, context }) => {
  */
 export const destroy = ({ dispatch }, { payload, context }) => {
     return new Promise((resolve, reject) => {
-        axios.delete('/api/v1/permission/' + payload.id).then((response) => {
+        axios.delete('permissions/' + payload.id).then((response) => {
             resolve(response)
         }).catch((error) => {
             context.errors = error.response.data.errors

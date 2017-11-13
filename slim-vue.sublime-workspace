@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"permission",
+				"permissions"
+			],
+			[
 				"destro",
 				"destroyTeam"
 			],
@@ -67,32 +71,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/app/admin/teams/components/TeamList.vue",
-			"settings":
-			{
-				"buffer_size": 3369,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/app/admin/roles/components/RoleList.vue",
-			"settings":
-			{
-				"buffer_size": 3526,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/app/admin/teams/vuex/actions.js",
-			"settings":
-			{
-				"buffer_size": 3507,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -183,35 +161,36 @@
 	"expanded_folders":
 	[
 		"/C/laragon/www/slim-vue",
-		"/C/laragon/www/slim-vue/src",
-		"/C/laragon/www/slim-vue/src/app",
-		"/C/laragon/www/slim-vue/src/app/admin",
-		"/C/laragon/www/slim-vue/src/app/admin/roles",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/components",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex",
-		"/C/laragon/www/slim-vue/src/app/admin/teams",
-		"/C/laragon/www/slim-vue/src/app/admin/teams/components",
-		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex",
-		"/C/laragon/www/slim-vue/src/app/auth",
-		"/C/laragon/www/slim-vue/src/app/auth/vuex",
-		"/C/laragon/www/slim-vue/src/vuex"
+		"/C/laragon/www/slim-vue/src"
 	],
 	"file_history":
 	[
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/deploy/2017/q3_ooc/2017_Q3_OOC_VAR_ORDER_REPORT_FIX#5.sh",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/actions.js",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/actions.js",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions/vuex/actions.js",
+		"/C/laragon/www/slim-vue/src/main.js",
+		"/C/laragon/www/slim-vue/src/app/auth/vuex/actions.js",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/PermissionForm.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/PermissionList.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions/vuex/state.js",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions/vuex/getters.js",
 		"/C/laragon/www/slim-vue/src/app/admin/teams/components/TeamForm.vue",
-		"/C/laragon/www/slim-vue/src/vuex/actions.js",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/components/TeamList.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/Permissions.vue",
 		"/C/laragon/www/slim-vue/src/vuex/index.js",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions/vuex/mutations.js",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions/vuex/index.js",
+		"/C/laragon/www/slim-vue/src/app/admin/permissions/routes/index.js",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/components/Teams.vue",
+		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/deploy/2017/q3_ooc/2017_Q3_OOC_VAR_ORDER_REPORT_FIX#5.sh",
+		"/C/laragon/www/slim-vue/src/vuex/actions.js",
 		"/C/Users/huszanai/OneDrive - National Instruments/Laravel/Vuex/src/store/index.js",
 		"/C/laragon/www/slim-vue/src/vuex/mutations.js",
 		"/C/laragon/www/slim-vue/src/vuex/state.js",
 		"/C/laragon/www/slim-vue/src/router/beforeEach.js",
 		"/C/laragon/www/slim-vue/src/router/index.js",
-		"/C/laragon/www/slim-vue/src/app/admin/teams/components/Teams.vue",
-		"/C/laragon/www/slim-vue/src/app/admin/teams/components/TeamList.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/getters.js",
 		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/mutations.js",
-		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/state.js",
 		"/C/laragon/www/slim-vue/src/app/admin/teams/routes/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/index.js",
@@ -231,24 +210,19 @@
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Form.vue",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_prospect_hold_v.sql",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/mutations.js",
-		"/C/laragon/www/slim-vue/src/app/auth/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/auth/vuex/mutations.js",
 		"/C/laragon/www/slim-vue/src/app/auth/vuex/getters.js",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/getters.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/state.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Table.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/index.js",
 		"/C/laragon/www/slim-vue/src/components/Navigation.vue",
-		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/Permissions.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/Form.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/Table.vue",
 		"/C/laragon/www/slim-api/resources/assets/js/app/admin/common/components/Horizontal.vue",
-		"/C/laragon/www/slim-vue/src/app/admin/permissions/routes/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/index.js",
 		"/C/laragon/www/slim-api/resources/assets/js/app.js",
 		"/C/laragon/www/slim-api/resources/assets/js/components/App.vue",
-		"/C/laragon/www/slim-vue/src/main.js",
 		"/C/laragon/www/slim-api/resources/views/welcome.blade.php",
 		"/C/laragon/www/slim-api/resources/assets/js/components/Loader.vue",
 		"/C/laragon/www/slim-vue/src/components/Loader.vue",
@@ -318,18 +292,11 @@
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_awaiting_return_line_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/Grant/ni_crm_cln_cl_serv_op_line_grant.sql",
 		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/synonyms/FND_USER_synonyms#2.sql",
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/grants/csi_ii_relationships_grant#4.sql",
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/grants/cs_incident_statuses_vl_grants#2.sql",
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/grants/cs_incident_statuses_b_grants#1.sql",
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/synonyms/cs_incident_statuses_vl_synonyms#1.sql",
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/hz_parties_cp_v#2.sql",
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/ni_pmdm_bookings_class_pn_v#5.sql",
-		"/C/Users/huszanai/AppData/Local/Temp/Temp1_code-laravel-datatables-laravel-datatables.zip/app/Http/Controllers/DataTable/DataTableController.php",
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/ni/snapshots/ni_pmdm_categorizations_mv#1.sql"
+		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/grants/csi_ii_relationships_grant#4.sql"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 76.0
 	},
 	"find_in_files":
 	{
@@ -432,99 +399,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/app/admin/teams/components/TeamList.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3369,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3122,
-								3122
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1701.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/app/admin/roles/components/RoleList.vue",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 3526,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3037,
-								3072
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1981.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/app/admin/teams/vuex/actions.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3507,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3219,
-								3225
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2533.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

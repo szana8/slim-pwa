@@ -17,6 +17,7 @@ LocalForage.config({
     storeName: 'slim'
 })
 
+const api_version = 'v1'
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -24,8 +25,8 @@ LocalForage.config({
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 window.axios = require('axios');
-window.axios.defaults.baseURL = 'http://slim-api.dev:88/';
-//window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.baseURL = 'http://slim-api.dev:88/api/' + api_version + '/'
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
  * Enable/disable production tip.
