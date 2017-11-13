@@ -1,5 +1,3 @@
-import { isEmpty } from 'lodash'
-
 /**
  * Fetch all of the teams from the Slim API and add to the
  * teams state. Return with a new Promise.
@@ -44,17 +42,17 @@ export const getTeam = ( { commit }, teamId ) => {
  * @param  {[type]} payload          [description]
  * @return {[type]}                  [description]
  */
-export const submit = ({ dispatch }, { payload }) => {
+export const submit = ({ dispatch }, { payload, context }) => {
     return new Promise((resolve, reject) => {
          if (payload.id != null) {
-            dispatch('update', payload).then((response) => {
+            dispatch('update', { payload, context }).then((response) => {
                 resolve(response)
             }).catch((error) => {
                 reject(error)
             });
         }
         else {
-            dispatch('store', payload).then((response) => {
+            dispatch('store', { payload, context } ).then((response) => {
                 resolve(response)
             }).catch((error) => {
                 reject(error)
@@ -72,7 +70,7 @@ export const submit = ({ dispatch }, { payload }) => {
  */
 export const store = ({ dispatch }, { payload, context }) => {
     return new Promise((resolve, reject) => {
-        axios.post('/api/v1/team', payload).then((response) => {
+        axios.post('/api/v1/team', payload ).then((response) => {
             resolve(response)
         }).catch((error) => {
             context.errors = error.response.data.errors

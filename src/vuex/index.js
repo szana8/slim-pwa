@@ -13,6 +13,7 @@ import * as actions from './actions'
 import auth from '../app/auth/vuex'
 import roles from '../app/admin/roles/vuex'
 import teams from '../app/admin/teams/vuex'
+import permissions from '../app/admin/permissions/vuex'
 
 /**
  * Set the vuex components to the base vuex store
@@ -28,5 +29,6 @@ export default new Vuex.Store({
         auth: auth,
         roles: roles,
         teams: teams,
+        permissions: permissions,
     }
 })

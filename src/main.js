@@ -25,7 +25,7 @@ LocalForage.config({
  */
 window.axios = require('axios');
 window.axios.defaults.baseURL = 'http://slim-api.dev:88/';
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+//window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
  * Enable/disable production tip.
