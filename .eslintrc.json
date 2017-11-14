@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "amd": true
+    },
+    "globals": {
+        "$": true
+    },
+    "extends": "spatie/vue",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        /*"linebreak-style": [
+            "error",
+            "windows"
+        ],*/
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ]
+    },
+    "plugins": [
+        "vue"
+    ]
+}

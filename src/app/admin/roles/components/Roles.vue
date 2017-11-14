@@ -1,21 +1,16 @@
 <template>
     <v-layout row justify-center>
         <role-form></role-form>
-
         <v-flex d-flex xs12 sm12 md12 xl12>
-            
             <router-view></router-view>
-
             <!-- Floating action button -->
-                <v-fab-transition>
+                <v-fab-transition v-if="! fabHidden">
                     <v-btn color="primary" key="edit" dark fab fixed bottom right v-model="fab" @click="openRolesForm">
                         <v-icon>add</v-icon>
                     </v-btn>
                 </v-fab-transition>
             <!-- End Floating action button -->
-            
         </v-flex>
-
     </v-layout>
 </template>
 
@@ -35,7 +30,12 @@
                 tabs: null,
                 search: null,
                 hidden: false,
+                fabHidden: false,
             }
+        },
+
+        mounted() {
+            EventBus.$on('toggleFab', this.toggleFab);
         },
 
         methods: {
@@ -45,6 +45,15 @@
 
             openRolesForm () {
                 EventBus.$emit('openRolesForm');
+            },
+
+            toggleFab (isHidden) {
+                if (isHidden == true) {
+                    this.fabHidden = true
+                }
+                else {
+                    this.fabHidden = false
+                }
             }
         }
     }

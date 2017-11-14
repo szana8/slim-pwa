@@ -9,7 +9,7 @@
                     <v-layout wrap>
                         <v-flex xs12>
 
-                            <v-text-field label="Name" required v-model="name" v-bind:class="{ 'input-group--error':  errors.name }" />
+                            <v-text-field label="Name" required v-model="role.name" v-bind:class="{ 'input-group--error':  errors.name }" />
                             <div class="input-group__details" style="margin-top:-30px;color:red;" v-if="errors.name">
                                 <div class="input-group__messages">
                                     <div class="input-group__error" v-text="errors.name[0]"/>
@@ -18,7 +18,7 @@
 
                         </v-flex>
                         <v-flex xs12>
-                            <v-text-field label="Display Name" required v-model="display_name" v-bind:class="{ 'input-group--error':  errors.display_name }" />
+                            <v-text-field label="Display Name" required v-model="role.display_name" v-bind:class="{ 'input-group--error':  errors.display_name }" />
                             <div class="input-group__details" style="margin-top:-30px;color:red;" v-if="errors.display_name">
                                 <div class="input-group__messages">
                                     <div class="input-group__error" v-text="errors.display_name[0]"/>
@@ -26,7 +26,7 @@
                             </div>
                         </v-flex>
                         <v-flex xs12>
-                            <v-text-field multi-line label="Description" required v-model="description" />
+                            <v-text-field multi-line label="Description" required v-model="role.description" />
                         </v-flex>
                     </v-layout>
                 </v-container>
@@ -41,21 +41,23 @@
 </template>
 
 <script>
-    import { mapActions } from 'vuex'
+    import { mapActions, mapGetters } from 'vuex'
 
     export default {
         name: 'RoleForm',
 
         data() {
             return {
-                name: null,
                 dialog: false,
-                action: 'Create',
-                description: null,
-                display_name: null,
+                mode: "insert",
                 errors: [],
             }
         },
+
+        computed: mapGetters({
+            role: 'roles/role',
+            action: 'roles/action',
+        }),
 
         mounted() {
             EventBus.$on('openRolesForm', this.openForm);
@@ -63,36 +65,44 @@
 
         methods: {
             ...mapActions({
-                store: 'roles/store',
+                submitRole: 'roles/submit',
+                fetchRole: 'roles/fetchRole',
             }),
 
-            openForm: function () {
-                this.dialog = true;
+            openForm: function (role) {
+                if ( role != null ) {
+                    this.fetchRole(role).then(() => {
+                        this.dialog = true;
+                        return
+                    })
+                }
+                else {
+                    this.dialog = true
+                    return
+                }
             },
 
             submit: function () {
-                EventBus.$emit('loading', true)
-                this.store({
+                this.submitRole({
                     payload: {
-                        name: this.name,
-                        description: this.description,
-                        display_name: this.display_name,
+                        id: this.role.id,
+                        name: this.role.name,
+                        display_name: this.role.display_name,
+                        description: this.role.description,
                     },
-                    context: this
-                }).then((response) => {
+                }).then(() => {
                     this.resetFields()
-                    EventBus.$emit('loading', false)
                     EventBus.$emit('refreshRoleTable');
-                }).catch((error) => {
-                    EventBus.$emit('loading', false)
+                }).catch(() => {
+                    console.log('Error when submit the ' + this.role.name + ' role.')
                 })
             },
 
             resetFields: function () {
-                this.name = null
                 this.dialog = false
-                this.description = null
-                this.display_name = null
+                this.role.name = null
+                this.role.description = null
+                this.role.display_name = null
             }
 
         },

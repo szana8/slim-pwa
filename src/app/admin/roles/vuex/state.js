@@ -6,5 +6,6 @@ export default {
         display_name: null,
         description: null,
         permissions: []
-    }
+    },
+    action: null,
 }

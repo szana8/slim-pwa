@@ -25,7 +25,7 @@
                     <v-btn flat icon color="primary" @click="getPermissions(props.item.id)">
                         <v-icon>list</v-icon>
                     </v-btn>
-                    <v-btn flat icon color="primary">
+                    <v-btn flat icon color="primary" @click="editRole(props.item.id)">
                         <v-icon>edit</v-icon>
                     </v-btn>
                     <v-btn flat icon color="error" @click="destroy(props.item.id)">
@@ -74,6 +74,7 @@
         mounted() {
             this.getData()
             EventBus.$on('refreshRoleTable', this.getData);
+            EventBus.$emit('toggleFab', false);
         },
 
         methods: {
@@ -88,6 +89,10 @@
                 }).catch(() => {
                     this.loading = false;
                 });
+            },
+
+            editRole: function (role) {
+                EventBus.$emit('openRolesForm', role);
             },
 
             destroy: function (role) {
@@ -106,7 +111,7 @@
                         roleId: roleId
                     } 
                 })
-            }
+            },
         }
     }
 

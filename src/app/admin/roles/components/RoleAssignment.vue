@@ -5,45 +5,33 @@
                 <v-card-title primary-title>
                     <div>
                         <h3 class="headline mb-0">Role Assignment</h3>
-                        <div>This permissions has been assigned to the {{ roleId }} role.</div>
+                        <div>This permissions has been assigned to the {{ assignments.display_name }} role.</div>
                     </div>
-                    <v-spacer></v-spacer>
-                    <v-text-field append-icon="search"
-                                  label="Search"
-                                  single-line hide-details
-                                  v-model="search">
-                    </v-text-field>
+                    <v-spacer />
+                    <v-text-field append-icon="search" label="Search" single-line hide-details v-model="search" />
                 </v-card-title>
-                <v-data-table
-                        :headers="headers"
-                        :items="items"
-                        :loading="loading"
-                        class="elevation-1"
-                        :search="search"
-                        :pagination.sync="pagination">
-
-                    <template slot="headers" slot-scope="props">
-                        <tr>
-                            <th></th>
-                            <th v-for="header in props.headers" :key="header.text" class="text-xs-right">
-                                {{ header.text }}
-                            </th>
-                        </tr>
-                    </template>
+                 <v-data-table :headers="headers" :items="permissions" :search="search" :loading="loading" class="elevation-1">
                     <template slot="items" slot-scope="props">
-                        <v-checkbox v-model="permission[props.item.id]"></v-checkbox>
+                        <v-checkbox v-model="assignments.permissions[props.item.id]"></v-checkbox>
                         <td class="text-xs-right">{{ props.item.name }}</td>
                         <td class="text-xs-right">{{ props.item.display_name }}</td>
                         <td class="text-xs-right">{{ props.item.description }}</td>
                     </template>
-
                 </v-data-table>
             </v-card>
         </v-flex>
+
+        <v-fab-transition>
+            <v-btn color="success" key="edit" dark fab fixed bottom right v-model="fab" @click="">
+                <v-icon>save</v-icon>
+            </v-btn>
+        </v-fab-transition>
+
     </v-layout>
 </template>
 
 <script>
+    import { mapActions, mapGetters } from 'vuex'
 
     export default {
         name: 'RoleAssignment',
@@ -54,12 +42,10 @@
 
         data() {
             return {
-                permission: [],
-                totalItems: 0,
-                items: [],
+                fab: false,
+                search: null,
                 loading: true,
                 pagination: {},
-                search: null,
                 headers: [
                     {text: 'Name', value: 'name', align: 'left'},
                     {text: 'Display Name', value: 'display_name'},
@@ -68,31 +54,39 @@
             }
         },
 
+        computed: mapGetters({
+            assignments: 'roles/role',
+            permissions: 'permissions/permissions',
+        }),
+
         mounted() {
-            this.getPermissions();
+            EventBus.$emit('toggleFab', true);
+            this.getPermissions()
+            this.getAssignments()
         },
 
         methods: {
+            ...mapActions({
+                fetchAssignments: 'roles/fetchRole',
+                fetchPermissions: 'permissions/fetchPermissions',
+            }),
 
             getPermissions: function () {
-                axios.get('/api/v1/permission').then((response) => {
-                    this.loading = false
-                    this.items = response.data.data;
-                }).catch((error) => {
-                    context.errors = error.response.data.errors
-                    reject(error)
-                })
+               this.loading = true
+                this.fetchPermissions().then(() => {
+                    this.loading = false;
+                }).catch(() => {
+                    this.loading = false;
+                });
             },
 
-            changeSort(column) {
-                if (this.pagination.sortBy === column) {
-                    this.pagination.descending = !this.pagination.descending
-                } else {
-                    this.pagination.sortBy = column
-                    this.pagination.descending = false
-                }
-            },
-
+            getAssignments: function () {
+                this.fetchAssignments(this.roleId).then(() => {
+                    this.loading = false;
+                }).catch(() => {
+                    this.loading = false;
+                });
+            }
         },
 
     }

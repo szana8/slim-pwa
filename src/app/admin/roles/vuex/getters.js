@@ -27,3 +27,17 @@ export const role = (state) => {
 export const permissions = (state) => {
     return state.permissions
 }
+
+/**
+ * [description]
+ * @param  {[type]} state [description]
+ * @return {[type]}       [description]
+ */
+export const action = (state) => {
+    if ( state.role.id != null )
+        state.action = 'Update'
+    else
+        state.action = 'Insert'
+
+    return state.action
+}

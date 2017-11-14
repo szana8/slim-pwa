@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"require"
+			],
+			[
 				"permission",
 				"permissions"
 			],
@@ -71,6 +75,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/App.vue",
+			"settings":
+			{
+				"buffer_size": 1081,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -80,9 +93,13 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "",
+		"last_filter": "Ins",
 		"selected_items":
 		[
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -140,7 +157,7 @@
 				"Material Theme: Activate theme"
 			]
 		],
-		"width": 496.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -161,15 +178,25 @@
 	"expanded_folders":
 	[
 		"/C/laragon/www/slim-vue",
+		"/C/laragon/www/slim-vue/node_modules",
 		"/C/laragon/www/slim-vue/src"
 	],
 	"file_history":
 	[
+		"/C/laragon/www/slim-vue/.eslintrc.json",
+		"/C/laragon/www/slim-vue/package.json",
+		"/C/laragon/www/slim-vue/src/main.js",
+		"/C/laragon/www/slim-vue/src/App.vue",
+		"/C/laragon/www/slim-vue/src/components/NavigationDrawer.vue",
+		"/C/laragon/www/slim-vue/src/app/auth/vuex/actions.js",
+		"/C/laragon/www/slim-vue/src/vuex/actions.js",
+		"/C/Users/huszanai/AppData/Roaming/Sublime Text 3/Packages/ESLint/ESLint.sublime-settings",
+		"/C/Users/huszanai/AppData/Roaming/Sublime Text 3/Packages/User/ESLint.sublime-settings",
+		"/C/Users/huszanai/AppData/Roaming/Sublime Text 3/Packages/Terminal/Default (Windows).sublime-keymap",
+		"/C/Users/huszanai/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/laragon/www/slim-vue/src/app/admin/teams/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/vuex/actions.js",
-		"/C/laragon/www/slim-vue/src/main.js",
-		"/C/laragon/www/slim-vue/src/app/auth/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/PermissionForm.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/PermissionList.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/vuex/state.js",
@@ -183,7 +210,6 @@
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/routes/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/teams/components/Teams.vue",
 		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/deploy/2017/q3_ooc/2017_Q3_OOC_VAR_ORDER_REPORT_FIX#5.sh",
-		"/C/laragon/www/slim-vue/src/vuex/actions.js",
 		"/C/Users/huszanai/OneDrive - National Instruments/Laravel/Vuex/src/store/index.js",
 		"/C/laragon/www/slim-vue/src/vuex/mutations.js",
 		"/C/laragon/www/slim-vue/src/vuex/state.js",
@@ -198,15 +224,12 @@
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/RoleList.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/RoleAssignment.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/routes/index.js",
-		"/C/laragon/www/slim-vue/src/components/NavigationDrawer.vue",
 		"/C/laragon/www/slim-vue/src/app/errors/routes/index.js",
-		"/C/laragon/www/slim-vue/package.json",
 		"/C/laragon/www/slim-vue/.eslint.json",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Assignment.vue",
 		"/C/laragon/www/slim-vue/src/helpers/index.js",
 		"/C/laragon/www/slim-api/composer.json",
 		"/C/laragon/www/slim-api/bootstrap/app.php",
-		"/C/laragon/www/slim-vue/src/App.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Form.vue",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_prospect_hold_v.sql",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/mutations.js",
@@ -228,7 +251,6 @@
 		"/C/laragon/www/slim-vue/src/components/Loader.vue",
 		"/C/laragon/www/slim-vue/src/app/routes.js",
 		"/C/Users/huszanai/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
-		"/C/Users/huszanai/AppData/Roaming/Sublime Text 3/Packages/Terminal/Default (Windows).sublime-keymap",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/Install Script/2018_Q1_NI_CRM_CLEANUP_RELEASE.sh",
 		"/C/P4/IT/main/code/apps/apex/workspace/apex_ni/db_objects/grants_synonyms/GRANTS_CDI_EDATA_APEX.sql",
 		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/ni_crm_invalid_cc_orders_v.sql",
@@ -288,15 +310,11 @@
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/ViewsOld/OSS order line with SO that is still open while all the return-ship OE lines in the same order has closed SOs.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/ViewsOld/ni_oss_line_ret_ship_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/ViewsOld/OSS order line that is not linked to any SO.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/ViewsOld/ni_crm_oss_line_not_so_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_awaiting_return_line_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/Grant/ni_crm_cln_cl_serv_op_line_grant.sql",
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/synonyms/FND_USER_synonyms#2.sql",
-		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/grants/csi_ii_relationships_grant#4.sql"
+		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/ViewsOld/ni_crm_oss_line_not_so_v.sql"
 	],
 	"find":
 	{
-		"height": 76.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -384,6 +402,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"//",
 			"role",
 			"2605228",
 			"ship_to_org_id",
@@ -399,8 +418,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/App.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1081,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								673,
+								673
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vuejs Complete Package/vue.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -435,6 +485,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 186.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0

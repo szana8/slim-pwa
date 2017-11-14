@@ -104,12 +104,12 @@ export const update = ({ dispatch }, { payload, context }) => {
  * @param  {[type]} teamId           [description]
  * @return {[type]}                  [description]
  */
-export const destroy = ({ dispatch }, { payload, context }) => {
+export const destroy = ({ dispatch }, permission) => {
+    console.log(permission)
     return new Promise((resolve, reject) => {
-        axios.delete('permissions/' + payload.id).then((response) => {
+        axios.delete('permissions/' + permission).then((response) => {
             resolve(response)
         }).catch((error) => {
-            context.errors = error.response.data.errors
             reject(error)
         })
     })
