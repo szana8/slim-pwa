@@ -1,41 +1,43 @@
 <template>
-    <v-card>
-        <v-card-title primary-title>
-            <div>
-                <h3 class="headline mb-0">Global Roles</h3>
-                <div>Slim enables you to allocate particular people to specific roles in your project. Roles are used when defining other settings, like notifications and permissions.</div>
-            </div>
-            <v-spacer></v-spacer>
-            <v-text-field append-icon="search" label="Search" single-line hide-details v-model="search"></v-text-field>
-        </v-card-title>
+    <v-layout row justify-center class="mb-5">
+        <v-flex d-flex xs12 sm12 md12 xl12>
+            <v-card>
+                <v-card-title primary-title>
+                    <div>
+                        <h3 class="headline mb-0">Global Roles</h3>
+                        Slim enables you to allocate particular people to specific roles in your project. Roles are used when defining other settings, like notifications and permissions.
+                    </div>
+                    <v-spacer></v-spacer>
+                    <v-text-field append-icon="search" label="Search" single-line hide-details v-model="search"></v-text-field>
+                </v-card-title>
 
-        <v-data-table
-            :headers="headers"
-            :items="roles"
-            :search="search"
-            :loading="loading"
-            class="elevation-1"
-            :pagination.sync="pagination">
-            
-            <template slot="items" slot-scope="props">
-                <td>{{ props.item.name }}</td>
-                <td class="text-xs-right">{{ props.item.display_name }}</td>
-                <td class="text-xs-right">{{ props.item.description }}</td>
-                <td class="text-xs-right">
-                    <v-btn flat icon color="primary" @click="getPermissions(props.item.id)">
-                        <v-icon>list</v-icon>
-                    </v-btn>
-                    <v-btn flat icon color="primary" @click="editRole(props.item.id)">
-                        <v-icon>edit</v-icon>
-                    </v-btn>
-                    <v-btn flat icon color="error" @click="destroy(props.item.id)">
-                        <v-icon>delete</v-icon>
-                    </v-btn>
-                </td>
-            </template>
+                <v-data-table :headers="headers" :items="roles" :search="search" :loading="loading" class="elevation-1">
+                    <template slot="items" slot-scope="props">
+                        <td>{{ props.item.name }}</td>
+                        <td class="text-xs-right">{{ props.item.display_name }}</td>
+                        <td class="text-xs-right">{{ props.item.description }}</td>
+                        <td class="text-xs-right">
+                            <v-btn flat icon color="primary" @click="getPermissions(props.item.id)">
+                                <v-icon>list</v-icon>
+                            </v-btn>
+                            <v-btn flat icon color="primary" @click="editRole(props.item.id)">
+                                <v-icon>edit</v-icon>
+                            </v-btn>
+                            <v-btn flat icon color="error" @click="destroy(props.item.id)">
+                                <v-icon>delete</v-icon>
+                            </v-btn>
+                        </td>
+                    </template>
+                </v-data-table>
+            </v-card>
+        </v-flex>
 
-        </v-data-table>
-    </v-card>
+        <v-fab-transition>
+            <v-btn color="primary" key="edit" dark fab fixed bottom right v-model="fab" @click="openRolesForm">
+                <v-icon>add</v-icon>
+            </v-btn>
+        </v-fab-transition>
+    </v-layout>
 </template>
 
 <script>
@@ -54,15 +56,6 @@
                     {text: 'Display Name', value: 'display_name'},
                     {text: 'Description', value: 'description'},
                 ]
-            }
-        },
-
-        watch: {
-            pagination: {
-                handler() {
-                    //
-                },
-                deep: true
             }
         },
 
@@ -111,6 +104,10 @@
                         roleId: roleId
                     } 
                 })
+            },
+
+            openRolesForm () {
+                EventBus.$emit('openRolesForm');
             },
         }
     }

@@ -9,13 +9,7 @@
             <v-text-field append-icon="search" label="Search" single-line hide-details v-model="search"></v-text-field>
         </v-card-title>
 
-         <v-data-table
-                :headers="headers"
-                :items="teams"
-                :search="search"
-                :loading="loading"
-                class="elevation-1"
-        >
+         <v-data-table :headers="headers" :items="teams" :search="search" :loading="loading" class="elevation-1">
             <template slot="items" slot-scope="props">
                 <td>{{ props.item.name }}</td>
                 <td class="text-xs-right">{{ props.item.display_name }}</td>
@@ -31,7 +25,6 @@
             </template>
         </v-data-table>
     </v-card>
-
 </template>
 
 <script>

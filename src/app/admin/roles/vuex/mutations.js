@@ -10,6 +10,17 @@ export const addRolesToList = (state, roles) => {
 }
 
 /**
+ * Add all of the permissions to the state object
+ * 
+ * @param  {[type]} state       [description]
+ * @param  {[type]} permissions [description]
+ * @return {[type]}             [description]
+ */
+export const addPermissionsToList = (state, permissions) => {
+    state.permissionList = permissions
+}
+
+/**
  * Add all of the roles to the state object
  * 
  * @param  {[type]} state [description]
@@ -21,9 +32,10 @@ export const addRoleToList = (state, role) => {
     state.role.name = role.name
     state.role.display_name = role.display_name
     state.role.description = role.description
-    state.role.permissions = []
+    state.role.permissions = role.permissions.data
+    /*state.role.permissions = []
 
     role.permissions.data.forEach(function(item) {
-        state.role.permissions.push(item.id)
-    })
+        state.role.permissions[item.id] = true
+    })*/
 }

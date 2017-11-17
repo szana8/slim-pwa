@@ -20,6 +20,25 @@ export const fetchRoles = ({ commit } ) => {
 }
 
 /**
+ * Fetch all of the teams from the Slim API and add to the
+ * teams state. Return with a new Promise.
+ * 
+ * @param  {[type]} options.commit [description]
+ * @return {[type]}                [description]
+ */
+export const fetchPermissions = ({ commit } ) => {
+    return new Promise((resolve, reject) => {
+        axios.get('permissions').then((response) => {
+            commit('addPermissionsToList', response.data.data)
+            resolve()
+        }).catch((error) => {
+            context.errors = error.response.data.errors
+            reject(error)
+        })
+    })
+}
+
+/**
  * [description]
  * @param  {[type]} options.commit [description]
  * @param  {[type]} role           [description]
@@ -90,6 +109,7 @@ export const store = ({ dispatch }, { payload, context }) => {
  * @return {[type]}                  [description]
  */
 export const update = ({ dispatch }, { payload, context }) => {
+    console.log(payload)
     return new Promise((resolve, reject) => {
         axios.put('roles/' + payload.id, payload).then((response) => {
             resolve(response)
