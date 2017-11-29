@@ -51,6 +51,7 @@
                 search: null,   
                 loading: true,
                 pagination: {},
+                fab: false,
                 headers: [
                     {text: 'Name', value: 'name', align: 'left'},
                     {text: 'Display Name', value: 'display_name'},

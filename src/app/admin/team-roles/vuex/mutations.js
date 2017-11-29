@@ -17,5 +17,9 @@ export const addTeamRolesToList = (state, teamRoles) => {
  * @return {[type]}       [description]
  */
 export const addTeamsToList = (state, teamList) => {
-    state.teamList = teamList
+    state.role.id = teamList.id
+    state.role.name = teamList.name
+    state.role.display_name = teamList.display_name
+    state.role.description = teamList.description
+    state.role.teams = teamList.team.data
 }

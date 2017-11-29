@@ -4,17 +4,17 @@
             <v-card >
                 <v-card-title primary-title>
                     <div>
-                        <h3 class="headline mb-0">{{ role.display_name }}</h3>
+                        <h3 class="headline mb-0">Role name: {{ role.display_name }}</h3>
                         {{ role.description }}
                     </div>
                 </v-card-title>
 
-                <v-data-table :headers="headers" :items="role.user.data" class="elevation-1">
+                <v-data-table :headers="headers" :items="role.user.data" :loading="loading" class="elevation-1">
                     <template slot="items" slot-scope="props">
                         <td>{{ props.item.name }}</td>
                         <td class="text-xs-right">{{ props.item.email }}</td>
                         <td class="text-xs-right">
-                            <i :key="team.id" v-for="team in role.team.data">{{ team.display_name }}</i>
+                            <i :key="team.id" v-for="team in role.team.data">{{ team.display_name }}, </i>
                         </td>
                         <td class="text-xs-right">
                             <v-btn flat icon color="primary" @click="editTeams(props.item.id, role.id)">
@@ -45,7 +45,7 @@
                 loading: true,
                 pagination: {},
                 headers: [
-                    {text: 'Name', value: 'name', align: 'left'},
+                    {text: 'User Name', value: 'name', align: 'left'},
                     {text: 'Email', value: 'display_name'},
                     {text: 'Team Name', value: 'description'},
                     {text: 'Action', value: 'description'},

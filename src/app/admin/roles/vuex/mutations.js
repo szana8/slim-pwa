@@ -33,9 +33,4 @@ export const addRoleToList = (state, role) => {
     state.role.display_name = role.display_name
     state.role.description = role.description
     state.role.permissions = role.permissions.data
-    /*state.role.permissions = []
-
-    role.permissions.data.forEach(function(item) {
-        state.role.permissions[item.id] = true
-    })*/
 }

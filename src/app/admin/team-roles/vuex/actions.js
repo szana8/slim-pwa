@@ -27,7 +27,7 @@ export const fetchTeamRoles = ({ commit } ) => {
 export const fetchTeams = ({ commit }, { userId, roleId }) => {
     return new Promise((resolve, reject) => {
         axios.get('team-role/' + userId + '/' + roleId).then((response) => {
-            commit('addTeamsToList', response.data.data[0].team.data)
+            commit('addTeamsToList', response.data.data[0])
             resolve()
         });
     }).catch((error) => {

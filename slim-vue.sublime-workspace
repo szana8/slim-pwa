@@ -115,36 +115,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/app/admin/team-roles/components/TeamRolesList.vue",
-			"settings":
-			{
-				"buffer_size": 2826,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/app/admin/team-roles/vuex/actions.js",
-			"settings":
-			{
-				"buffer_size": 1176,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "import uniq from 'lodash/uniq'\n\n/**\n * Return the roles array from the state\n * \n * @param  {[type]} state [description]\n * @return {[type]}       [description]\n */\nexport const teamRoles = (state) => {\n    //return uniq(state.teamRolesList.map(p => p.name))\n    return state.teamRolesList\n}\n\n/**\n * Return the roles array from the state\n * \n * @param  {[type]} state [description]\n * @return {[type]}       [description]\n */\nexport const getTeams = (state) => {\n\n    return state.teamList\n}\n\nexport const getUsers = (state) => {\n    \n}",
-			"file": "src/app/admin/team-roles/vuex/getters.js",
-			"file_size": 491,
-			"file_write_time": 131554050210988200,
-			"settings":
-			{
-				"buffer_size": 536,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -246,22 +216,22 @@
 		"/C/laragon/www/slim-vue/src",
 		"/C/laragon/www/slim-vue/src/app",
 		"/C/laragon/www/slim-vue/src/app/admin",
-		"/C/laragon/www/slim-vue/src/app/admin/roles",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/components",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/routes",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/components",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex"
+		"/C/laragon/www/slim-vue/src/app/admin/common",
+		"/C/laragon/www/slim-vue/src/app/admin/common/components"
 	],
 	"file_history":
 	[
+		"/C/laragon/www/slim-vue/src/app/admin/team-roles/components/TeamRolesList.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/getters.js",
+		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/ni_bundles_util.pkb",
+		"/C/P4/Manufacturing/MfgApplications/HomeGrown/release/Demopool/v1.2.0/application/modules/ManageItems/library/Model.php",
+		"/C/P4/Manufacturing/MfgApplications/HomeGrown/release/Demopool/v1.2.0/application/modules/ManageItems/library/Controller.php",
+		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/appltop/NICS/aol/concurrent_programs/NICS_NICS_IB_SINGLE_INSTANCE_FIX_CP#2.ldt",
+		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/admin/team-roles/components/TeamRolesAssignment.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/mutations.js",
 		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/state.js",
 		"/C/laragon/www/slim-vue/src/app/admin/team-roles/routes/index.js",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/actions.js",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/getters.js",
 		"/C/tmp/Új mappa/src/components/common/Message.vue",
 		"/C/tmp/Új mappa/src/components/common/MiniCart.vue",
 		"/C/tmp/Új mappa/src/components/shop/Products.vue",
@@ -272,7 +242,6 @@
 		"/C/laragon/www/slim-vue/src/vuex/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Roles.vue",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/components/TeamRolesList.vue",
 		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_historical_tool#6.pkb",
 		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_historical_tool.pkb",
 		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_historical_tool#3.pkb",
@@ -379,15 +348,11 @@
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_cl_oe_op_line_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_booked_over_month_v.sql",
 		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/synonyms/FND_FLEX_VALUES_TL_synonyms.sql",
-		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/ni_oss_line_ret_ship_v.sql",
-		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/ni_os_line_cl_so_v.sql",
-		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/ni_crm_wf_stuck_v.sql",
-		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/ni_crm_wf_status_post_ship_v.sql",
-		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/ni_crm_six_dsh_pn_oe_v.sql"
+		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/ni_oss_line_ret_ship_v.sql"
 	],
 	"find":
 	{
-		"height": 78.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -401,6 +366,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_UpdateKitDataByID",
 			"v-for",
 			"someItems",
 			"RoleAssignment",
@@ -493,95 +459,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/app/admin/team-roles/components/TeamRolesList.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2826,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								469,
-								483
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vuejs Complete Package/vue.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 957.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/app/admin/team-roles/vuex/actions.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1176,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1033,
-								1033
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 261.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/app/admin/team-roles/vuex/getters.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 536,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								534,
-								534
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

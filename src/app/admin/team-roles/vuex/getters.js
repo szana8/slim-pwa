@@ -7,7 +7,6 @@ import uniq from 'lodash/uniq'
  * @return {[type]}       [description]
  */
 export const teamRoles = (state) => {
-    //return uniq(state.teamRolesList.map(p => p.name))
     return state.teamRolesList
 }
 
@@ -18,6 +17,9 @@ export const teamRoles = (state) => {
  * @return {[type]}       [description]
  */
 export const getTeams = (state) => {
+    return state.role
+}
 
-    return state.teamList
+export const getUsers = (state) => {
+    
 }
