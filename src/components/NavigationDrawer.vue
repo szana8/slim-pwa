@@ -108,7 +108,16 @@
                     {
                         text: 'Issues',
                         icon: 'assignment',
-                        route: '/issues',
+                        'icon-alt': 'assignment',
+                        //route: '/issues',
+                        model: false,
+                        children: [
+                            { text: 'Issue Type', icon: 'bookmark', route: '/issue/type', heading: 'Settings' },
+                            { text: 'Issue Type Schema', icon: 'view_column', route: '/issue/schema' },
+                            { text: 'Issue Status', icon: 'view_module', route: '/issue/status' },
+                            { text: 'Issue Resolution', icon: 'done', route: '/issue/resolution' },
+                            { text: 'Issue Priority', icon: 'low_priority', route: '/issue/priority' },
+                        ]
                     },
                     {
                         text: 'Workflows',

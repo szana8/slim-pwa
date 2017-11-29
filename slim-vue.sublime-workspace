@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"chi",
+				"children"
+			],
+			[
+				"getT",
+				"getRolesTeam"
+			],
+			[
 				"user",
 				"userId"
 			],
@@ -216,21 +224,44 @@
 		"/C/laragon/www/slim-vue/src",
 		"/C/laragon/www/slim-vue/src/app",
 		"/C/laragon/www/slim-vue/src/app/admin",
-		"/C/laragon/www/slim-vue/src/app/admin/common",
-		"/C/laragon/www/slim-vue/src/app/admin/common/components"
+		"/C/laragon/www/slim-vue/src/app/admin/roles",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/components",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/routes",
+		"/C/laragon/www/slim-vue/src/app/issue",
+		"/C/laragon/www/slim-vue/src/app/issue/types",
+		"/C/laragon/www/slim-vue/src/app/issue/types/components",
+		"/C/laragon/www/slim-vue/src/app/issue/types/routes"
 	],
 	"file_history":
 	[
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/components/TeamRolesList.vue",
+		"/C/laragon/www/slim-vue/src/app/issue/types/routes/index.js",
+		"/C/laragon/www/slim-vue/src/app/issue/types/components/TypeList.vue",
+		"/C/laragon/www/slim-vue/src/app/issue/types/components/Type.vue",
+		"/C/laragon/www/slim-vue/src/app/routes.js",
+		"/C/laragon/www/slim-vue/src/app/issue/type/components/Type.vue",
+		"/C/laragon/www/slim-vue/src/app/issue/type/routes/index.js",
+		"/C/laragon/www/slim-vue/src/app/issue/type/vuex/actions.js",
+		"/C/laragon/www/slim-vue/src/app/issue/type/vuex/mutations.js",
+		"/C/laragon/www/slim-vue/src/app/issue/type/vuex/state.js",
+		"/C/laragon/www/slim-vue/src/app/issue/type/vuex/getters.js",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/state.js",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/mutations.js",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/getters.js",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/actions.js",
+		"/C/laragon/www/slim-vue/src/app/issue/type/components/RoleAssignment.vue",
+		"/C/laragon/www/slim-vue/src/app/issue/type/components/RoleForm.vue",
+		"/C/laragon/www/slim-vue/src/components/NavigationDrawer.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/team-roles/components/TeamRolesAssignment.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/getters.js",
+		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/mutations.js",
+		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/state.js",
+		"/C/laragon/www/slim-vue/src/app/admin/roles/components/RoleList.vue",
+		"/C/laragon/www/slim-vue/src/app/admin/team-roles/components/TeamRolesList.vue",
 		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/ni_bundles_util.pkb",
 		"/C/P4/Manufacturing/MfgApplications/HomeGrown/release/Demopool/v1.2.0/application/modules/ManageItems/library/Model.php",
 		"/C/P4/Manufacturing/MfgApplications/HomeGrown/release/Demopool/v1.2.0/application/modules/ManageItems/library/Controller.php",
 		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/appltop/NICS/aol/concurrent_programs/NICS_NICS_IB_SINGLE_INSTANCE_FIX_CP#2.ldt",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/actions.js",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/components/TeamRolesAssignment.vue",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/mutations.js",
-		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/state.js",
 		"/C/laragon/www/slim-vue/src/app/admin/team-roles/routes/index.js",
 		"/C/tmp/Új mappa/src/components/common/Message.vue",
 		"/C/tmp/Új mappa/src/components/common/MiniCart.vue",
@@ -246,13 +277,8 @@
 		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_historical_tool.pkb",
 		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_historical_tool#3.pkb",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/RoleAssignment.vue",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/components/RoleList.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/teams/components/TeamList.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/PermissionList.vue",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/actions.js",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/mutations.js",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/getters.js",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/vuex/state.js",
 		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/ni_cancel_stuck_lines_util.pkb",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-741/Package/ni_cancel_stuck_lines_util.pks",
 		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/ni_cancel_stuck_lines_util#5.pkb",
@@ -268,7 +294,6 @@
 		"/C/laragon/www/slim-vue/node_modules/eslint-config-spatie/index.js",
 		"/C/laragon/www/slim-vue/package.json",
 		"/C/laragon/www/slim-vue/src/main.js",
-		"/C/laragon/www/slim-vue/src/components/NavigationDrawer.vue",
 		"/C/laragon/www/slim-vue/src/app/auth/vuex/actions.js",
 		"/C/laragon/www/slim-vue/src/vuex/actions.js",
 		"/C/Users/huszanai/AppData/Roaming/Sublime Text 3/Packages/ESLint/ESLint.sublime-settings",
@@ -318,7 +343,6 @@
 		"/C/laragon/www/slim-api/resources/views/welcome.blade.php",
 		"/C/laragon/www/slim-api/resources/assets/js/components/Loader.vue",
 		"/C/laragon/www/slim-vue/src/components/Loader.vue",
-		"/C/laragon/www/slim-vue/src/app/routes.js",
 		"/C/Users/huszanai/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/Install Script/2018_Q1_NI_CRM_CLEANUP_RELEASE.sh",
 		"/C/P4/IT/main/code/apps/apex/workspace/apex_ni/db_objects/grants_synonyms/GRANTS_CDI_EDATA_APEX.sql",
@@ -337,18 +361,7 @@
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_op_oe_blank_price_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_op_line_qty_zero_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_op_line_cl_so_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_oos_booked_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_lines_invoice_hold_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_line_pre_billing_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_invalid_cc_orders_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cln_op_serv_cl_line_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cln_cl_serv_op_line_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_op_oe_cl_line_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_o_oe_cancel_l_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_cleanup_cl_oe_op_line_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_booked_over_month_v.sql",
-		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/synonyms/FND_FLEX_VALUES_TL_synonyms.sql",
-		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/views/ni_oss_line_ret_ship_v.sql"
+		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_oos_booked_v.sql"
 	],
 	"find":
 	{
@@ -573,7 +586,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 291.0,
+	"side_bar_width": 309.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
