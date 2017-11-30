@@ -1,6 +1,6 @@
 <template>
     <v-layout row justify-center>
-        <role-form></role-form>
+        
         <v-flex d-flex xs12 sm12 md12 xl12>
             <router-view></router-view>
         </v-flex>

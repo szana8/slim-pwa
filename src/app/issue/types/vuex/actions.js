@@ -7,10 +7,10 @@ import { isEmpty } from 'lodash'
  * @param  {[type]} options.commit [description]
  * @return {[type]}                [description]
  */
-export const fetchRoles = ({ commit } ) => {
+export const fetchTypes = ({ commit } ) => {
     return new Promise((resolve, reject) => {
-        axios.get('roles').then((response) => {
-            commit('addRolesToList', response.data.data)
+        axios.get('issue/type').then((response) => {
+            commit('addTypesToList', response.data.data)
             resolve()
         });
     }).catch((error) => {

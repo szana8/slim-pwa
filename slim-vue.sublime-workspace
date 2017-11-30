@@ -123,6 +123,24 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/app/issue/types/components/TypeList.vue",
+			"settings":
+			{
+				"buffer_size": 3088,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/issue/types/vuex/actions.js",
+			"settings":
+			{
+				"buffer_size": 3224,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -223,20 +241,27 @@
 		"/C/laragon/www/slim-vue",
 		"/C/laragon/www/slim-vue/src",
 		"/C/laragon/www/slim-vue/src/app",
-		"/C/laragon/www/slim-vue/src/app/admin",
-		"/C/laragon/www/slim-vue/src/app/admin/roles",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/components",
-		"/C/laragon/www/slim-vue/src/app/admin/roles/routes",
 		"/C/laragon/www/slim-vue/src/app/issue",
 		"/C/laragon/www/slim-vue/src/app/issue/types",
 		"/C/laragon/www/slim-vue/src/app/issue/types/components",
-		"/C/laragon/www/slim-vue/src/app/issue/types/routes"
+		"/C/laragon/www/slim-vue/src/app/issue/types/routes",
+		"/C/laragon/www/slim-vue/src/app/issue/types/vuex",
+		"/C/laragon/www/slim-vue/src/vuex"
 	],
 	"file_history":
 	[
+		"/C/laragon/www/slim-vue/src/app/issue/types/components/Type.vue",
+		"/C/laragon/www/slim-vue/src/vuex/index.js",
+		"/C/laragon/www/slim-vue/src/app/admin/teams/components/TeamList.vue",
+		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/synonyms/niwap_auditor_log_synonym.sql",
+		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_ib_service_tags.pkb",
+		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/deploy/2018/q1/2018_Q1_DB_LINK_FIX.sh",
+		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_ib_service_tags#1.pks",
+		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_ib_service_tags.sql",
+		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps_ne/types/nics_component_tbl_t#1.sql",
+		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/deploy/2017/q1_ooc/2017_Q2_NICS_IB_SERVICE_TAGS#5.sh",
 		"/C/laragon/www/slim-vue/src/app/issue/types/routes/index.js",
 		"/C/laragon/www/slim-vue/src/app/issue/types/components/TypeList.vue",
-		"/C/laragon/www/slim-vue/src/app/issue/types/components/Type.vue",
 		"/C/laragon/www/slim-vue/src/app/routes.js",
 		"/C/laragon/www/slim-vue/src/app/issue/type/components/Type.vue",
 		"/C/laragon/www/slim-vue/src/app/issue/type/routes/index.js",
@@ -270,14 +295,12 @@
 		"/C/tmp/Új mappa/src/components/Home.vue",
 		"/C/tmp/Új mappa/src/router/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/team-roles/components/TeamRoles.vue",
-		"/C/laragon/www/slim-vue/src/vuex/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/team-roles/vuex/index.js",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/Roles.vue",
 		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_historical_tool#6.pkb",
 		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_historical_tool.pkb",
 		"/C/Users/huszanai/AppData/Local/Temp/p4v/HUDEB606345_perforce_1666/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/nics_historical_tool#3.pkb",
 		"/C/laragon/www/slim-vue/src/app/admin/roles/components/RoleAssignment.vue",
-		"/C/laragon/www/slim-vue/src/app/admin/teams/components/TeamList.vue",
 		"/C/laragon/www/slim-vue/src/app/admin/permissions/components/PermissionList.vue",
 		"/C/P4/IT/main/code/apps/oracle_apps/ebiz/db_objects/apps/packages/ni_cancel_stuck_lines_util.pkb",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-741/Package/ni_cancel_stuck_lines_util.pks",
@@ -354,14 +377,7 @@
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_os_line_cl_so_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_wf_stuck_v.sql",
 		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_wf_status_post_ship_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_six_dsh_pn_oe_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_serv_lines_msd_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_oss_line_not_so_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_op_oe_inactive_tt_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_op_oe_blank_price_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_op_line_qty_zero_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_op_line_cl_so_v.sql",
-		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_oos_booked_v.sql"
+		"/C/Users/huszanai/OneDrive - National Instruments/Jira Tickets/CRM/ORDERS-737/View/ni_crm_six_dsh_pn_oe_v.sql"
 	],
 	"find":
 	{
@@ -369,7 +385,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 158.0,
+		"height": 179.0,
 		"where_history":
 		[
 		]
@@ -472,8 +488,69 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/app/issue/types/components/TypeList.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3088,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2877,
+								2877
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vuejs Complete Package/vue.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1479.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/app/issue/types/vuex/actions.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								424,
+								424
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 613.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -586,7 +663,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 309.0,
+	"side_bar_width": 313.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

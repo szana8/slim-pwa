@@ -16,6 +16,8 @@ import teams from '../app/admin/teams/vuex'
 import teamRoles from '../app/admin/team-roles/vuex'
 import permissions from '../app/admin/permissions/vuex'
 
+import types from '../app/issue/types/vuex'
+
 /**
  * Set the vuex components to the base vuex store
  * 
@@ -32,5 +34,6 @@ export default new Vuex.Store({
         teams: teams,
         teamRoles: teamRoles,
         permissions: permissions,
+        types: types,
     }
 })
